@@ -1,0 +1,22 @@
+{
+  "name": "sort-dot-js",
+  "version": "1.0.4",
+  "description": "sort module for javaScript , Sorting in JavaScript has adversity, we have solved this problem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sort",
+    "easy",
+    "sorting",
+    "javascript",
+    "sort dot js",
+    "sort.js"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
+}
