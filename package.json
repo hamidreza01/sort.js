@@ -1,6 +1,6 @@
 {
   "name": "sort-dot-js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "sort module for javaScript , Sorting in JavaScript has adversity, we have solved this problem.",
   "main": "index.js",
   "scripts": {

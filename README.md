@@ -1,5 +1,3 @@
-# sort.js
-
 Hello , this is a module for **sorting**
 
 ## How to use :
@@ -89,3 +87,10 @@ The purpose of creating this library is simply to make sorting operations in Jav
 - Does it use the SORT JavaScript method ? 
 
 No, this is another algorithm 
+
+
+#### developer :
+
+The library was developed by Hamidreza Ghahremani\
+[mail](mailto:hamidgh@mail.ir)\
+[telegram](https://telegram.me/hamid_the)

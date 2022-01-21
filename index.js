@@ -16,11 +16,12 @@ class Sort {
       return array;
     } catch (err) {
       console.log(
-        "There is a problem with your input values, please read the docking "
+        "There is a problem with your input values, please read the docs "
       );
     }
   }
   numSmallToBig(array) {
+    try{
     let done = false;
     while (!done) {
       done = true;
@@ -34,8 +35,14 @@ class Sort {
       }
     }
     return array;
+  } catch (err) {
+    console.log(
+      "There is a problem with your input values, please read the docs "
+    );
+  }
   }
   enBigToSmall(array) {
+    try{
     for (let f = 0; f < array.length; f++) {
       array[f] =
         array[f].charCodeAt(0) +
@@ -64,8 +71,14 @@ class Sort {
         ) + new String(array[n]).split("[!09-012312kaf120!]")[1];
     }
     return array;
+  } catch (err) {
+    console.log(
+      "There is a problem with your input values, please read the docs "
+    );
+  }
   }
   enSmallToBig(array) {
+    try{
     for (let f = 0; f < array.length; f++) {
       array[f] =
         array[f].charCodeAt(0) +
@@ -94,8 +107,14 @@ class Sort {
         ) + new String(array[n]).split("[!09-012312kaf120!]")[1];
     }
     return array;
+  } catch (err) {
+    console.log(
+      "There is a problem with your input values, please read the docs "
+    );
+  }
   }
   peBigToSmall(array) {
+    try{
     let apList = [
       {
         value: "ا",
@@ -273,8 +292,14 @@ class Sort {
       swAp = [];
     }
     return array;
+  } catch (err) {
+    console.log(
+      "There is a problem with your input values, please read the docs "
+    );
+  }
   }
   peSmallToBig(array) {
+    try{
     let apList = [
       {
         value: "ا",
@@ -452,6 +477,11 @@ class Sort {
       swAp = [];
     }
     return array;
+  } catch (err) {
+    console.log(
+      "There is a problem with your input values, please read the docs "
+    );
+  }
   }
 }
 module.exports = new Sort();
