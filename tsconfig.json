@@ -2,6 +2,7 @@
   "compilerOptions": {
     "rootDir": "src",
     "module": "umd",
-    "outDir": "lib"
+    "outDir": "lib",
+    "lib": ["es6", "DOM"],
   },
 }
