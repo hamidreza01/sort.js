@@ -1,5 +1,5 @@
 class Sort {
-    numBigToSmall(array) {
+    numBigToSmall(array: number[]) {
         try {
             let done = false;
             while (!done) {
@@ -20,7 +20,7 @@ class Sort {
             );
         }
     }
-    numSmallToBig(array) {
+    numSmallToBig(array: number[]) {
         try {
             let done = false;
             while (!done) {
@@ -41,7 +41,7 @@ class Sort {
             );
         }
     }
-    enBigToSmall(array) {
+    enBigToSmall(array: string[]) {
         try {
             for (let f = 0; f < array.length; f++) {
                 array[f] =
@@ -67,7 +67,7 @@ class Sort {
             for (let n = 0; n < array.length; n++) {
                 array[n] =
                     String.fromCharCode(
-                        array[n].split("[!09-012312kaf120!]")[0]
+                        +array[n].split("[!09-012312kaf120!]")[0]
                     ) + new String(array[n]).split("[!09-012312kaf120!]")[1];
             }
             return array;
@@ -77,7 +77,7 @@ class Sort {
             );
         }
     }
-    enSmallToBig(array) {
+    enSmallToBig(array: string[]) {
         try {
             for (let f = 0; f < array.length; f++) {
                 array[f] =
@@ -103,7 +103,7 @@ class Sort {
             for (let n = 0; n < array.length; n++) {
                 array[n] =
                     String.fromCharCode(
-                        array[n].split("[!09-012312kaf120!]")[0]
+                        +array[n].split("[!09-012312kaf120!]")[0]
                     ) + new String(array[n]).split("[!09-012312kaf120!]")[1];
             }
             return array;
@@ -113,7 +113,7 @@ class Sort {
             );
         }
     }
-    peBigToSmall(array) {
+    peBigToSmall(array: string[]) {
         try {
             let apList = [
                 {
@@ -298,7 +298,7 @@ class Sort {
             );
         }
     }
-    peSmallToBig(array) {
+    peSmallToBig(array: string[]) {
         try {
             let apList = [
                 {
