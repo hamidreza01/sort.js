@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "module": "umd",
+    "outDir": "lib"
+  },
+}
