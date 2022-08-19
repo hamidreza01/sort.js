@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "module": "umd",
+    "outDir": "lib",
+    "lib": ["es6", "DOM"],
+    "strict": true,
+    "declaration": true,
+  },
+}

@@ -2,9 +2,11 @@
   "name": "sort-dot-js",
   "version": "1.0.5",
   "description": "sort module for javaScript , Sorting in JavaScript has adversity, we have solved this problem.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "sort",
