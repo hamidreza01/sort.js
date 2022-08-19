@@ -4,5 +4,6 @@
     "module": "umd",
     "outDir": "lib",
     "lib": ["es6", "DOM"],
+    "strict": true
   },
 }

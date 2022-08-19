@@ -253,14 +253,19 @@ class Sort {
             for (let f = 0; f < array.length; f++) {
                 for (let i = 0; i < array[f].length; i++) {
                     let thisArg = new String(array[f]);
-                    swap.push(
-                        thisArg
-                            .split("")
-                        [i].replace(
-                            thisArg[i],
-                            apList.find((x) => x.value === thisArg[i]).code + ""
-                        )
-                    );
+
+                    const code = apList.find((x) => x.value === thisArg[i])?.code
+
+                    if (code) {
+                        swap.push(
+                            thisArg
+                                .split("")
+                            [i].replace(
+                                thisArg[i],
+                                code + ""
+                            )
+                        );
+                    }
                 }
                 array[f] = swap.join("");
                 swap = [];
@@ -284,9 +289,10 @@ class Sort {
             for (let f = 0; f < array.length; f++) {
                 for (let i = 0; i < array[f].length; i += 2) {
                     let thisArg = new String(array[f]);
-                    swAp.push(
-                        apList.find((x) => x.code + "" === thisArg[i] + thisArg[i + 1]).value
-                    );
+
+                    const value = apList.find((x) => x.code + "" === thisArg[i] + thisArg[i + 1])?.value
+
+                    swAp.push(value);
                 }
                 array[f] = swAp.join("");
                 swAp = [];
@@ -438,14 +444,19 @@ class Sort {
             for (let f = 0; f < array.length; f++) {
                 for (let i = 0; i < array[f].length; i++) {
                     let thisArg = new String(array[f]);
-                    swap.push(
-                        thisArg
-                            .split("")
-                        [i].replace(
-                            thisArg[i],
-                            apList.find((x) => x.value == thisArg[i]).code + ""
-                        )
-                    );
+
+                    const code = apList.find((x) => x.value == thisArg[i])?.code
+
+                    if (code) {
+                        swap.push(
+                            thisArg
+                                .split("")
+                            [i].replace(
+                                thisArg[i],
+                                code + ""
+                            )
+                        );
+                    }
                 }
                 array[f] = swap.join("");
                 swap = [];
@@ -469,9 +480,12 @@ class Sort {
             for (let f = 0; f < array.length; f++) {
                 for (let i = 0; i < array[f].length; i += 2) {
                     let thisArg = new String(array[f]);
-                    swAp.push(
-                        apList.find((x) => x.code + "" === thisArg[i] + thisArg[i + 1]).value
-                    );
+
+                    const value = apList.find((x) => x.code + "" === thisArg[i] + thisArg[i + 1])?.value
+
+                    if (value) {
+                        swAp.push(value);
+                    }
                 }
                 array[f] = swAp.join("");
                 swAp = [];
